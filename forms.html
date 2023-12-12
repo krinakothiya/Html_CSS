@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>This is the HTML forms</h2>
+    <form action="backend.php" target="_blank" method="get">
+        <!-- After you submit, notice that the form values is visible in the address bar of the new browser tab -->
+        <fieldset>
+            <legend>Form</legend>
+            <label for="name"> Name</label>
+            <div>
+                <input type="text" name="myname" id="name" value="krina" readonly> <!-- readonly specify the valu cannot be changed -->
+            </div>
+            <br>
+
+            <label for="phone"> phone</label>
+            <div>
+                <input type="tel" name="myphone" id="phone" maxlength="10">  <!-- maximum number of characters allowed in an input field -->
+            </div>
+            <br>
+
+            <label for="role"> Role</label>
+            <div>
+                <input type="text" name="myRole" id="role" value="developer" disabled> <!-- disabled input field is unusable and un-clickable.-->
+            </div>
+            <br>
+
+            <label for="email"> Email</label>
+            <div>
+                <input type="email" name="myEmail" id="email">
+            </div>
+            <br>
+
+            <label for="date"> Date</label>
+            <div>
+                <input type="date" name="myDate" id="date">
+            </div>
+            <br>
+
+            <label for="bouns"> Bouns</label>
+            <div>
+                <input type="number" name="myBouns" id="bouns">
+            </div>
+            <br>
+
+            <label for="eligible"> Are you eligible</label>
+            <div>
+                <input type="checkbox" name="myEligibility" id="eligible" checked> <!-- it get checked by defult -->
+            </div>
+            <br>
+
+            <div>
+                Gender <br>Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender">
+                Other<input type="radio" name="myGender">
+            </div>
+            <br>
+
+            <label for="text"> Write about yourself</label>
+            <div>
+                <textarea name="Mytext" cols="30" rows="10" id="text"></textarea>
+
+            </div>
+            <br>
+
+            <label for="car"> Car</label>
+            <div>
+                <select name="mycar" id="car">
+                    <option value="Bmw"> BMW</option>
+                    <option value="Tata"> TATA</option>
+                    <option value="Tesla" selected> TESLA</option> <!-- it get select option by defult -->
+                </select>
+            </div>
+            <br>
+
+            <label for="myfile">Select a file</label>
+            <div>
+                <input type="file" name="myfile" id="myfile">
+            </div>
+            <br>
+            
+            <div>
+                <input type="button" onclick="alert('hello')" value="click me">  <!-- defines a button -->
+            </div>
+            <br>
+
+            <div>
+                <input type="submit" name="Submit now">
+                <input type="reset" name="Reset now">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hight, width, border, backgrounds </title>
+    <style>
+
+        #firstpara {
+            background-color: rgb(125, 181, 151);
+            height: 100px;
+            width: 345px;
+
+            /* border-width: 4px;    
+            border-color: black;
+            border-style: solid; */
+
+            border: 4px black solid;   /* This is a one line width, colour, style */
+            border-radius: 12px;
+        }
+
+        /* only  for one border change */
+        #secondpara{
+            background-color: rgb(212, 161, 129);
+            height: 100px;
+            width: 345px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid rgb(122, 121, 131);
+            border-left: 2px solid rgb(168, 124, 124);
+            border-right: 2px solid rgb(148, 53, 53);
+            border-top-left-radius: 6px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #thirdpara{
+            background-color: rgb(255, 253, 254);
+            height: 500px;
+            width: 455px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJSABdu-DcNum5D8y3r694z65Z4vu4wxVkBg&usqp=CAU);
+            background-repeat: no-repeat;  /* repeat-x and repeat-y will make it repeat on x and y axis */
+            border: 2px black solid;   
+
+            /* img pposition using px:  */
+            /* background-position: 192px 34px; */        
+            
+            /* background img using center, bottom, and top position: */  /* (center, top, bottom ) (center, left, right)*/
+            background-position: center center;           
+            /* background-position: bottom left; */     
+            /* background-position: top right; */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h3> This is heading </h3>
+    <p id="firstpara"> This is a first paragraph </p>
+
+    <h3> This is heading </h3>
+    <p id="secondpara"> This is a second paragraph </p>
+
+    <h3> This is heading </h3>
+    <p id="thirdpara"> This is a third paragraph </p>
+
+</body>
+
+</html>
